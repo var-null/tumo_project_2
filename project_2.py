@@ -48,7 +48,7 @@ print(gvars['logo_2'])
 
 i = 0
 
-while i < 100:
+while i < 10000:
 
     i += 1
 
@@ -62,8 +62,19 @@ while i < 100:
     if(vars['step'] == 1 and (sum == 7 or sum == 11)):
         print('You won')
         break
-    elif(vars['step'] == 1 and (sum == 2 or sum == 2 or sum == 12)):
+    elif(vars['step'] == 1 and (sum == 2 or sum == 3 or sum == 12)):
         print('You lose')
         break
+    elif(vars['step'] == 1 ):
+        print('Now your goal number is ' + str(sum))
+        vars['target_int'] = sum
+        vars['step'] = 2
+        continue
+    elif(vars['step'] == 2 and sum == 7):
+        print('You lose')
+        break
+    elif(vars['step'] == 2 and sum == vars['target_int']):
+        print('You won')
+        break
     else:
-        print('You')    
+        continue
