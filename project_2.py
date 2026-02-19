@@ -1,3 +1,14 @@
+#Could improve with descriptive names, f-strings, and removing semicolons (These names don’t tell someone what they really represent.)
+#In Python, semicolons are not needed at the end of a line. It doesn’t break the code, but it’s unnecessary and unusual :) .
+#Could prompt user to roll dice for better interaction
+#Using while i < 10000 is unnecessary
+#Let the player press Enter to roll the dice each time. Example:
+#input("Press Enter to roll the dice...")
+#dice1 = random.randint(1, 6)
+#dice2 = random.randint(1, 6)
+
+
+
 import random 
 
 def getGvars():
